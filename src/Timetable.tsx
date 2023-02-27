@@ -23,7 +23,7 @@ function Timetable<I>({
 
     width,
     timeWidth = 50,
-    itemMinHeightInMinutes = 25,
+    itemMinHeightInMinutes = 15,
     hourHeight = 60,
     linesTopOffset = 18,
     linesLeftInset = 15,
@@ -79,7 +79,7 @@ function Timetable<I>({
             return [];
 
         const positionedEvents: CardProps<I>[] = [];
-        const itemMinHeight = Math.max(itemMinHeightInMinutes, 25);
+        const itemMinHeight = Math.max(itemMinHeightInMinutes, 15);
 
         columnDays.forEach((columnDay, columnIndex) => {
             // Filter event by column date
