@@ -82,10 +82,10 @@ function Timetable<I>({
         let absoluteMinItemHeight = 15;
 
         // if we have a large item height, diregard the apps limitations.
-        if (hourHeight <= 250) {
+        if (hourHeight >= 250) {
             absoluteMinItemHeight = 1;
         }
-        
+
         const itemMinHeight = Math.max(itemMinHeightInMinutes, absoluteMinItemHeight);
 
         columnDays.forEach((columnDay, columnIndex) => {
